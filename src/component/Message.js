@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import { messageAction } from '../store/messageSlice';
 
@@ -6,7 +7,7 @@ const Message = function(){
     const message = useSelector(state => state.message)
 
     const toogleVisible = function(){
-        dispatch(messageAction.isShown());
+        dispatch(messageAction.isShown(true));
     }
 return(
     <div>

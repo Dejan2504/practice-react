@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import Word from './component/Word';
 import './App.css';
 import Message from './component/Message';
 import store from './store/store';
@@ -8,6 +8,7 @@ function App() {
   return (
     <Provider store={store}>
       <Message />
+      <Word />
     </Provider>
   );
 }
